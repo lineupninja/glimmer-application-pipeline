@@ -476,13 +476,13 @@ Please run the following to resolve this warning:
 
     const htmlName = this.outputPaths.app.html;
     const files = [
-      'src/ui/index.html'
+      'public/index.html'
     ];
 
     const index = new Funnel(srcTree, {
       files,
       getDestinationPath(relativePath) {
-        if (relativePath === 'src/ui/index.html') {
+        if (relativePath === 'public/index.html') {
           relativePath = htmlName;
         }
         return relativePath;
